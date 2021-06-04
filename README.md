@@ -7,6 +7,8 @@ The repo is split into different folders for each deliverable, I might make it m
 
 
 
+
+------------------------------------------------------------------------------------------------------------------------------
 Attributions not included in-line in code:
 
 Derek Banas's video on MySQL and his freely provided "MySQL cheat sheet" were an immense help in recalling MySQL 
