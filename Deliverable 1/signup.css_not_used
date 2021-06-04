@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form fieldset {
+    background-color: rgb(36, 39, 41);
+    border-radius: 15px;
+    flex: 1 1 300px;
+    padding: 7px;
+    margin: 7px;
+    font-size: 0.9em;
+}
+
+legend {
+    background-color: rgb(23, 26, 28);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+div.form {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px 5px;
+}
+
+form fieldset div.form > * {
+    flex: 1 1 150px;
+}
+
+
+input[type='submit'], input[type='reset'] {
+    font-size: 1.3em;
+    padding: 3px;
+    margin: 5px; 
+    border-radius: 10%;
+} 
