@@ -1,5 +1,7 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
+
+
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -12,12 +14,18 @@
 
 <body>
 
+    <form method='post'>
+      {% csrf_token %}
+      {{form.as_p}}
+      <input type = 'submit' value="submit">
+    </form>
+      
+
+</body>
 
 
-
-    <form action="{% url 'signup:registered'}" method="post">
-
-        <fieldset>
+<!--
+    <fieldset>
             <legend>New Member Information (* Required)</legend>
 
             <div class="form">
@@ -42,9 +50,4 @@
             <input type="reset" value="Reset"/>
         </div>
     </form>
-
-
-
-
-
-</body>
+-->
