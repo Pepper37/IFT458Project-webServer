@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>New Member Registration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+    
+</head>
+
+<body>
+
+
+
+
+    <form action="{% url 'signup:registered'}" method="post">
+
+        <fieldset>
+            <legend>New Member Information (* Required)</legend>
+
+            <div class="form">
+                <label for="username">* Username <small>(maximum 8 characters)</small></label>
+                <input type="text" name="username" id="username" maxlength="8" required/>
+            </div>
+
+            <div class="form">
+                <label for="password">* Password <small>(maximum 8 characters, must contain at least one: lowercase letter, uppercase letter, number 0-9)</small></label>
+                <input type="password" name="password" id="password" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9]).{1,8}$" required/>
+            </div>
+
+            <div class="form">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" placeholder="Jane" id="firstName" />
+            </div>
+            
+        </fieldset>
+
+        <div id="buttons">
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset"/>
+        </div>
+    </form>
+
+
+
+
+
+</body>

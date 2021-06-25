@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+
+html {
+    background: rgb(24, 26, 27);
+    height: 100%;
+}
+
+
+/* default background */
+body {
+    background-color: rgb(67, 77, 86);
+    border-left: 3px solid rgb(51, 51, 51);
+    border-right: 3px solid rgb(51, 51, 51);
+    min-height: 100%;  
+    margin: 0px auto;
+    min-width: 320px;
+    max-width: 1020px;  
+    width: 100%;
+    font-family: Verdana, Geneva, sans-serif;
+    color: rgb(236, 238, 240);
+}
+
+footer {
+    margin-top: 40px;
+    border-top: 1px solid rgb(0, 0, 0);
+    background-color: rgb(133, 143, 147);
+}
+
+footer p {
+    margin-left: 0px;
+    display: flex;
+    width: 320;
+    text-align: left;
+    color: color: rgb(236, 238, 240);
+    font-size: 0.8em;
+}
+
+h1 {
+    text-align: center;
+    font-family: Palatino;
+    color: rgb(236, 238, 240);
+    text-shadow: 2px 2px black;
+}
+
+
+div#video {
+    display: block;
+    flex-flow: wrap;
+    justify-content: left;
+}
+
+/* styles for signup page */
+
+form fieldset {
+    background-color: rgb(36, 39, 41);
+    border-radius: 15px;
+    flex: 1 1 300px;
+    padding: 45px;
+    margin: 50px;
+    font-size: 0.9em;
+}
+
+legend {
+    background-color: rgb(23, 26, 28);
+    border-radius: 5px;
+    padding: 7px;
+}
+
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+div.form {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 5px 5px;
+}
+
+form fieldset div.form > * {
+    flex: 1 1 150px;
+}
+
+
